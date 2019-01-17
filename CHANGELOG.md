@@ -9,6 +9,7 @@ Here's the changelog for @molgenis/molgenis-ui-menu
 ### Added
 ### Changed
 ### Removed
+- Remove polyfill
 
 ## [v1.1.1] - 2019-01-04
 ### Fixed
@@ -17,6 +18,10 @@ Here's the changelog for @molgenis/molgenis-ui-menu
 ## [v1.1.0] - 2019-01-04
 ### Changed
 - Support menu JSON format introduced in MOLGENIS 7.5
+
+## [v1.0.1] - 2019-01-17
+### Removed
+- Remove polyfill
 
 ## [v1.0.0] - Never released
 Bootstrap v4 menu with dropdown items.
