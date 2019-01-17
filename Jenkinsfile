@@ -44,9 +44,9 @@ pipeline {
         }
       }
     }
-    stage('Install, test and build: [ master ]') {
+    stage('Install, test and build: [ x.x ]') {
       when {
-        branch 'master'
+        expression { BRANCH_NAME ==~ /[0-9]\.[0-9]/ }
       }
       steps {
         milestone 1
@@ -64,9 +64,9 @@ pipeline {
         }
       }
     }
-    stage('Release: [ master ]') {
+    stage('Release: [ x.x ]') {
       when {
-        branch 'master'
+        expression { BRANCH_NAME ==~ /[0-9]\.[0-9]/ }
       }
       environment {
         REPOSITORY = 'molgenis/molgenis-ui-menu'
