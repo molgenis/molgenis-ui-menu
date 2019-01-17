@@ -1,6 +1,6 @@
 {
   "name": "@molgenis/molgenis-ui-menu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Molgenis menu component",
   "author": "Bart Charbon <b.charbon@umcqg.nl>",
   "main": "dist/static/molgenis-ui-menu.js",
