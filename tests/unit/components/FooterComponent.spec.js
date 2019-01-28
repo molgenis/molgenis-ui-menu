@@ -10,5 +10,4 @@ describe('FooterComponent.vue', () => {
     })
     expect(wrapper.html()).toMatchSnapshot()
   })
-
 })

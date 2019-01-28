@@ -21,7 +21,7 @@ module.exports = {
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.footer')
-      .assert.containsText("footer > div > p > span:nth-child(1)", "some additionalMessage")
+      .assert.containsText('footer > div > p > span:nth-child(1)', 'some additionalMessage')
       .end()
   },
   'show cookiewall and hide on click': browser => {
