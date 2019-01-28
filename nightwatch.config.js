@@ -69,6 +69,11 @@ module.exports = {
         javascriptEnabled: true,
         acceptSslCerts: true,
         marionette: true
+      },
+      selenium: {
+        cli_args: {
+          'webdriver.firefox.driver': require('geckodriver').path
+        }
       }
     },
     safari: {

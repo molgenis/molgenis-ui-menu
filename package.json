@@ -45,6 +45,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
+    "geckodriver": "^1.14.1",
     "ts-jest": "^23.0.0",
     "typescript": "^3.0.0",
     "vue": "^2.5.21",
