@@ -13,7 +13,7 @@ import NavBar from './components/NavBar.vue'
 import CookieWall from './components/CookieWall.vue'
 import FooterComponent from './components/FooterComponent.vue'
 import menu from './exampleMenu'
-import footer from './exampleFooter'
+import molgenisFooter from './exampleFooter'
 
 export default Vue.extend({
   name: 'app',
@@ -21,7 +21,7 @@ export default Vue.extend({
   data () {
     return {
       molgenisMenu: menu,
-      molgenisFooter: footer
+      molgenisFooter: molgenisFooter
     }
   }
 })

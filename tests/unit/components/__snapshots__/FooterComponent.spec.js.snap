@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterComponent.vue should match the snapshot 1`] = `
+<footer class="footer">
+  <div class="container">
+    <p class="font-italic text-muted text-center"><span>
+        some additionalMessage<br></span>
+
+      This database was generated using the open source <a href="http://www.molgenis.org">MOLGENIS database generator</a> <span>3.2.1-DEV</span> <span>built on 2019-01-25 08:22 UTC. </span> <span>App version: some-app-version. </span> <br> Please cite <a href="https://www.ncbi.nlm.nih.gov/pubmed/21210979">Swertz et al (2010)</a> or <a href="https://www.ncbi.nlm.nih.gov/pubmed/17297480">Swertz &amp; Jansen
+        (2007)</a> on use.
+    </p>
+  </div>
+</footer>
+`;

@@ -1,6 +1,6 @@
 import { MolgenisFooter } from './types'
 
-const molgenisMenu: MolgenisFooter = {
+const molgenisFooter: MolgenisFooter = {
   version: '3.2.1-DEV',
   buildDate: '2019-01-25 08:22 UTC',
   additionalMessage: 'some additionalMessage',
@@ -10,4 +10,4 @@ const molgenisMenu: MolgenisFooter = {
   pubmed2: 'https://www.ncbi.nlm.nih.gov/pubmed/17297480'
 }
 
-export default molgenisMenu
+export default molgenisFooter
