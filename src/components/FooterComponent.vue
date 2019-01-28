@@ -6,8 +6,9 @@
           {{additionalMessage}}<br/>
         </span>
 
-        This database was generated using the open source <a :href="molgenisSite">MOLGENIS database generator</a> <span
-        v-if="version">{{version}}</span> <span v-if="buildDate">built on {{buildDate}}. </span>
+        This database was generated using the open source <a :href="molgenisSite">MOLGENIS database generator </a>
+        <span
+          v-if="version">{{version}}</span> <span v-if="buildDate">built on {{buildDate}}. </span>
         <span v-if="appVersion">App version: {{appVersion}}. </span>
         <br/> Please cite <a :href="pubmed1">Swertz et al (2010)</a> or <a :href="pubmed2">Swertz &amp; Jansen
         (2007)</a> on use.
