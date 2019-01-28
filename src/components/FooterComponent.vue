@@ -5,7 +5,6 @@
         <span v-if="additionalMessage">
           {{additionalMessage}}<br/>
         </span>
-
         This database was generated using the open source <a :href="molgenisSite">MOLGENIS database generator </a>
         <span
           v-if="version">{{version}}</span> <span v-if="buildDate">built on {{buildDate}}. </span>
