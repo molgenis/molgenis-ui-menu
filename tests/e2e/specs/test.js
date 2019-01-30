@@ -2,6 +2,10 @@
 // http://nightwatchjs.org/guide#usage
 
 module.exports = {
+  tags: ['UiContext'],
+  before : function (browser) {
+    browser.resizeWindow(1024, 786)
+  },
   'display navbar test': browser => {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
