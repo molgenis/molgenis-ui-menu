@@ -3,7 +3,7 @@
 
 module.exports = {
   tags: ['UiContext'],
-  before : function (browser) {
+  before: function (browser) {
     browser.resizeWindow(1024, 786)
   },
   'display navbar test': browser => {
@@ -25,7 +25,7 @@ module.exports = {
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.footer')
-      .assert.containsText('footer > div > p > span:nth-child(1)', 'some additionalMessage')
+      .assert.containsText('footer > div > div:nth-child(1)', 'some additionalMessage')
       .end()
   },
   'show cookiewall and hide on click': browser => {

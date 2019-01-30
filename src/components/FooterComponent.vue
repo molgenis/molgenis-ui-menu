@@ -1,16 +1,24 @@
 <template>
   <footer class="footer">
-    <div class="container">
-      <p class="font-italic text-muted text-center">
-        <span v-if="additionalMessage">
-          {{additionalMessage}}<br/>
-        </span>
+    <div class="container font-italic text-muted text-center">
+      <div v-if="additionalMessage">
+        {{additionalMessage}}
+      </div>
+      <div>
         This database was generated using the open source <a :href="molgenisSite">MOLGENIS database generator </a>
-        <span
-          v-if="version">{{version}}</span> <span v-if="buildDate">built on {{buildDate}}. </span>
-        <span v-if="appVersion">App version: {{appVersion}}. </span>
-        <br/> Please cite <a :href="pubmed1">Swertz et al (2010)</a> or <a :href="pubmed2">Swertz &amp; Jansen
-        (2007)</a> on use.
+        <span v-if="version">
+          {{version}}
+        </span>
+        <span v-if="buildDate">
+          built on {{buildDate}}.
+        </span>
+      </div>
+      <div v-if="appVersion">
+        App version: {{appVersion}}.
+      </div>
+      <p>
+        Please cite <a :href="pubmed1">Swertz et al (2010)</a> or <a :href="pubmed2">Swertz &amp; Jansen(2007)</a> on
+        use.
       </p>
     </div>
   </footer>
