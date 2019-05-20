@@ -3,6 +3,7 @@
     <cookie-wall cookieName="permissionforcookies" />
     <header-component :molgenis-menu="molgenisMenu"/>
     <main class="mg-page-content">
+      
       <div class="container">
           <h1 class="mt-5">Page context demo!</h1>
           <div class="row">
