@@ -58,6 +58,11 @@ module.exports = {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#app', 5000)
+      .assert.elementPresent('.jumbotron')
+      .assert.elementPresent('.jumbotron button.btn')
+      .click('.jumbotron button.btn')
+      .pause(1000)
+      .assert.elementNotPresent('.jumbotron')
       .assert.elementPresent('#top-logo-vue-banner')
       .assert.elementPresent('#logo-top')
       .getElementSize('#logo-top', function (size) {

@@ -5,10 +5,23 @@
 
 Collection of top level page components for use in molgenis interface
 
-- Header component
+- Page component (Renders full molgnis page and handles comunication with server via 'context' endpoint)
+  - Cookie wall
+  - Header component
+  - Footer compoment
+
+example:
+```
+<page-component>
+    <p>I am a molgenis page with, header and footer</p>
+</page-component>
+```
+
+
+- Header component (Allows for more controller passing in menu and settings as props)
   - Header image component
   - Navbar
-- Footer compoment
+- Footer compoment (Allows for more controller passing settings as props)
 - Cookie wall 
 
 note: HeaderImageComponent may also be used as separate components
