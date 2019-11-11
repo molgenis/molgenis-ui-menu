@@ -66,23 +66,6 @@ module.exports = {
                 label: 'Home'
               },
               {
-                type: 'menu',
-                id: 'importdata',
-                label: 'Import data',
-                items: [
-                  {
-                    type: 'plugin',
-                    id: 'one-click-importer',
-                    label: 'Quick data import'
-                  },
-                  {
-                    type: 'plugin',
-                    id: 'importwizard',
-                    label: 'Advanced data import'
-                  }
-                ]
-              },
-              {
                 type: 'plugin',
                 id: 'navigator',
                 label: 'Navigator'
@@ -97,6 +80,53 @@ module.exports = {
                 type: 'plugin',
                 id: 'dataexplorer',
                 label: 'Data Explorer alt'
+              },
+              {
+                type: 'menu',
+                id: 'dataintegration',
+                label: 'Data Integration',
+                items: [
+                  {
+                    type: 'plugin',
+                    id: 'metadata-manager',
+                    label: 'Metadata Manager'
+                  },
+                  {
+                    type: 'menu',
+                    id: 'submenu',
+                    label: 'Submenu',
+                    items: [
+                      {
+                        type: 'plugin',
+                        id: 'sorta',
+                        label: 'SORTA'
+                      },
+                      {
+                        type: 'menu',
+                        id: 'subsubmenu',
+                        label: 'Sub Sub Menu',
+                        items: [
+                          {
+                            type: 'plugin',
+                            id: 'background',
+                            label: 'Test',
+                            'params': ''
+                          }
+                        ]
+                      },
+                      {
+                        type: 'plugin',
+                        id: 'mappingservice',
+                        label: 'Mapping Service'
+                      }
+                    ]
+                  },
+                  {
+                    type: 'plugin',
+                    id: 'tagwizard',
+                    label: 'Tag Wizard'
+                  }
+                ]
               },
               {
                 type: 'menu',
