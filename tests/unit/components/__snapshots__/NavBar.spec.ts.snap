@@ -20,11 +20,6 @@ exports[`NavBar.vue should match the snapshot 1`] = `
         <li class="nav-item"><a href="/menu/main/dataexplorer?selectedEntityType=sys_md_EntityType" class="nav-link">
             Data Explorer
           </a></li>
-        <li class="nav-item dropdown"><a id="dataintegration" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
-            Data Integration
-          </a>
-          <drop-down-items-stub parent="[object Object]" items="[object Object],[object Object],[object Object]" depth="0"></drop-down-items-stub>
-        </li>
         <li class="nav-item dropdown"><a id="admin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
             Admin
           </a>
