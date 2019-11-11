@@ -4,7 +4,7 @@
 
       <a v-if="molgenisMenu.navBarLogo" class="navbar-brand"
          :href="`/menu/main/${href(molgenisMenu.menu.items[0])}`">
-        <img :src="molgenisMenu.navBarLogo" class="molgenis-navbar-logo">
+        <img :src="molgenisMenu.navBarLogo" class="molgenis-navbar-logo" alt="brand-logo">
       </a>
       <a v-else class="navbar-brand" href="/">Home</a>
 
@@ -80,7 +80,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import { MolgenisMenu } from '../types'
 import { href } from '../href'
 import DropDownItems from './DropDownItems'

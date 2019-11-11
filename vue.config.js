@@ -94,6 +94,11 @@ module.exports = {
                 params: 'selectedEntityType=sys_md_EntityType'
               },
               {
+                type: 'plugin',
+                id: 'dataexplorer',
+                label: 'Data Explorer alt'
+              },
+              {
                 type: 'menu',
                 id: 'dataintegration',
                 label: 'Data Integration',

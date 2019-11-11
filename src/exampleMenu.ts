@@ -35,8 +35,8 @@ const molgenisMenu: MolgenisMenu = {
       },
       {
         type: 'plugin',
-        id: 'navigator1',
-        label: 'Sido'
+        id: 'navigator',
+        label: 'Navigator alt'
       },
       {
         type: 'plugin',
