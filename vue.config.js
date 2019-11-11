@@ -100,53 +100,6 @@ module.exports = {
               },
               {
                 type: 'menu',
-                id: 'dataintegration',
-                label: 'Data Integration',
-                items: [
-                  {
-                    type: 'plugin',
-                    id: 'metadata-manager',
-                    label: 'Metadata Manager'
-                  },
-                  {
-                    type: 'menu',
-                    id: 'submenu',
-                    label: 'Submenu',
-                    items: [
-                      {
-                        type: 'plugin',
-                        id: 'sorta',
-                        label: 'SORTA'
-                      },
-                      {
-                        type: 'menu',
-                        id: 'subsubmenu',
-                        label: 'Sub Sub Menu',
-                        items: [
-                          {
-                            type: 'plugin',
-                            id: 'background',
-                            label: 'Test',
-                            'params': ''
-                          }
-                        ]
-                      },
-                      {
-                        type: 'plugin',
-                        id: 'mappingservice',
-                        label: 'Mapping Service'
-                      }
-                    ]
-                  },
-                  {
-                    type: 'plugin',
-                    id: 'tagwizard',
-                    label: 'Tag Wizard'
-                  }
-                ]
-              },
-              {
-                type: 'menu',
                 id: 'admin',
                 label: 'Admin',
                 items: [
