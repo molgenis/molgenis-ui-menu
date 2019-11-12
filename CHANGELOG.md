@@ -1,3 +1,12 @@
+## [1.4.1](https://github.com/molgenis/molgenis-ui-context/compare/v1.4.0...v1.4.1) (2019-11-12)
+
+
+### Bug Fixes
+
+* Allow multiple menu items with same id ([74434ce](https://github.com/molgenis/molgenis-ui-context/commit/74434ce)), closes [#81](https://github.com/molgenis/molgenis-ui-context/issues/81)
+* show cookie wall if showCookieWall is true ([063ca36](https://github.com/molgenis/molgenis-ui-context/commit/063ca36)), closes [#84](https://github.com/molgenis/molgenis-ui-context/issues/84)
+* **81:** use index instead of plugin-id as key ([21a7155](https://github.com/molgenis/molgenis-ui-context/commit/21a7155))
+
 # [1.4.0](https://github.com/molgenis/molgenis-ui-context/compare/v1.3.3...v1.4.0) (2019-10-31)
 
 
