@@ -2,17 +2,15 @@
 
 exports[`NavBar.vue should match the snapshot 1`] = `
 <div class="molgenis-header-container">
-  <nav class="navbar navbar-light bg-light navbar-expand-md"><a href="/menu/main/home" class="navbar-brand"><img src="https://www.molgenis.org/assets/img/logo_green.png" class="molgenis-navbar-logo"></a> <button type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button>
+  <nav class="navbar navbar-light bg-light navbar-expand-md"><a href="/menu/main/home" class="navbar-brand"><img src="https://www.molgenis.org/assets/img/logo_green.png" alt="brand-logo" class="molgenis-navbar-logo"></a> <button type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button>
     <div id="navbar-content" class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <!---->
-        <li class="nav-item dropdown"><a id="importdata" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
-            Import data
-          </a>
-          <drop-down-items-stub parent="[object Object]" items="[object Object],[object Object]" depth="0"></drop-down-items-stub>
-        </li>
         <li class="nav-item active"><a href="/menu/main/navigator" class="nav-link">
             Navigator
+          </a></li>
+        <li class="nav-item active"><a href="/menu/main/navigator" class="nav-link">
+            Navigator alt
           </a></li>
         <li class="nav-item"><a href="/menu/main/dataexplorer?selectedEntityType=sys_md_EntityType" class="nav-link">
             Data Explorer

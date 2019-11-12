@@ -75,6 +75,9 @@
     "jquery": "^3.3.*",
     "popper.js": "^1.14.*"
   },
+  "resolutions": {
+    "@vue/cli-plugin-e2e-nightwatch/chromedriver": "77.0.0"
+  },
   "eslintConfig": {
     "root": true,
     "env": {

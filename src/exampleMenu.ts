@@ -12,26 +12,14 @@ const molgenisMenu: MolgenisMenu = {
         label: 'Home'
       },
       {
-        type: 'menu',
-        id: 'importdata',
-        label: 'Import data',
-        items: [
-          {
-            type: 'plugin',
-            id: 'one-click-importer',
-            label: 'Quick data import'
-          },
-          {
-            type: 'plugin',
-            id: 'importwizard',
-            label: 'Advanced data import'
-          }
-        ]
+        type: 'plugin',
+        id: 'navigator',
+        label: 'Navigator'
       },
       {
         type: 'plugin',
         id: 'navigator',
-        label: 'Navigator'
+        label: 'Navigator alt'
       },
       {
         type: 'plugin',

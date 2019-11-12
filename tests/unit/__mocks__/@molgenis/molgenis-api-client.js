@@ -18,5 +18,6 @@ export default {
         active: true
       }
     ]
-  })
+  }),
+  post: () => Promise.resolve()
 }

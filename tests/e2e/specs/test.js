@@ -10,6 +10,8 @@ module.exports = {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#app', 5000)
+      .click('.jumbotron button.btn')
+      .waitForElementVisible('.navbar', 5000)
       .assert.elementPresent('.navbar')
       .assert.elementPresent('.navbar-brand')
       .assert.elementPresent('.navbar-expand-md')
