@@ -43,7 +43,7 @@ module.exports = {
           additionalMessage: 'some <a href="https://en.wikipedia.org/wiki/All_your_base_are_belong_to_us">additional</a>Message',
           appVersion: 'some-app-version',
           molgenisSite: 'http://www.molgenis.org',
-          showCookieWall: false,
+          showCookieWall: true,
           authenticated: true,
           loginHref: '/login',
           helpLink: {
