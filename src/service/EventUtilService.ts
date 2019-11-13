@@ -19,7 +19,7 @@ export default {
       if (timeout !== null) {
         clearTimeout(timeout)
       }
-      timeout = setTimeout(later, wait)
+      timeout = window.setTimeout(later, wait)
       if (callNow) {
         func.apply(context, args)
       }
