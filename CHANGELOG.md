@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/molgenis/molgenis-ui-context/compare/v1.4.1...v1.4.2) (2019-11-13)
+
+
+### Bug Fixes
+
+* force ts setTimeout definition from window ([f647490](https://github.com/molgenis/molgenis-ui-context/commit/f647490))
+
 ## [1.4.1](https://github.com/molgenis/molgenis-ui-context/compare/v1.4.0...v1.4.1) (2019-11-12)
 
 
