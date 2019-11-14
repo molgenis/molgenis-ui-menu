@@ -1,22 +1,25 @@
-export interface MenuItem {
-    id: string
-    label: string
-    type: string
-    params?: string
-    items?: MenuItem[]
+export interface MenuNode {
+  id: string
+  label: string
+  type?: 'menu' | 'plugin'
+}
+
+export interface MenuItem extends MenuNode{
+  params?: string
+}
+
+export interface Menu extends MenuNode {
+  items: (Menu | MenuItem)[]
 }
 
 export interface MolgenisMenu {
-  menu: MenuItem
+  menu: Menu
   topLogo?: string
   topLogoMaxHeight?: number
-  navBarLogo: string
-  helpLink: {
-    href: string
-    label: string
-  }
+  navBarLogo?: string
+  helpLink: HelpLink
   authenticated: boolean
-  selectedPlugin: string
+  selectedPlugin?: string
   logoutFunction?: any,
   loginHref: string,
 }
@@ -27,4 +30,9 @@ export interface MolgenisFooter {
   molgenisSite: string
   appVersion?: string
   additionalMessage?: string
+}
+
+export interface HelpLink {
+  label: string
+  href: string
 }
