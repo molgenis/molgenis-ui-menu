@@ -4,7 +4,7 @@
       <div class="mg-additional-footer-message" v-if="additionalMessage" v-html="additionalMessage">
       </div>
       <div>
-        This database was generated using the open source <a :href="molgenisSite">MOLGENIS database generator </a>
+        This database was created using the open source <a :href="molgenisSite">MOLGENIS software </a>
         <span v-if="version">
           {{version}}
         </span>
