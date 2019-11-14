@@ -36,3 +36,23 @@ export interface HelpLink {
   label: string
   href: string
 }
+
+export interface Context {
+  logoTop?: string
+  logoTopMaxHeight: number
+  navBarLogo?: string
+  menu?: Menu
+  loginHref: string
+  helpLink: HelpLink
+  authenticated: boolean
+  showCookieWall: boolean
+  additionalMessage?: string
+  version: string
+  buildDate: string
+  cssHref?: string
+}
+
+export interface ContextState {
+  context: Context | null
+  selectedPlugin?: string
+}

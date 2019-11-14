@@ -70,6 +70,22 @@ The second way is to import the umd's, but Vue and the peer dependencies are pac
 </script>
 ```
 
+### Vuex
+If you use [Vuex](https://vuex.vuejs.org/), the `fetchContext` action will retrieve the values for the component props from the context API.
+It returns a promise that resolves when the context has been fetched.
+
+```
+import { store } from '@molgenis/molgenis-ui-context'
+const store = new Vuex.Store(store)
+store.dispatch('fetchContext')
+```
+
+Once fetched, the context will be available in `store.state.context`.
+
+The getters map the context to the props, i.e. the `molgenisMenu` prop to set on the `HeaderComponent` can be retrieved from `store.getters.molgenisMenu`
+
+If you already have a store, you can combine the context store with your own store as a vuex [module](https://vuex.vuejs.org/guide/modules.html).
+
 ## Changelog
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/molgenis/molgenis-ui-context/blob/master/CHANGELOG.md).
 
