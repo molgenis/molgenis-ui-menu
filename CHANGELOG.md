@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/molgenis/molgenis-ui-context/compare/v1.4.2...v1.4.3) (2019-11-15)
+
+
+### Bug Fixes
+
+* update footer text ([96ff6f5](https://github.com/molgenis/molgenis-ui-context/commit/96ff6f5))
+
 ## [1.4.2](https://github.com/molgenis/molgenis-ui-context/compare/v1.4.1...v1.4.2) (2019-11-13)
 
 
