@@ -1,3 +1,17 @@
+# [1.5.0](https://github.com/molgenis/molgenis-ui-context/compare/v1.4.3...v1.5.0) (2019-11-18)
+
+
+### Bug Fixes
+
+* fix prop typings ([639a016](https://github.com/molgenis/molgenis-ui-context/commit/639a016))
+* **getters:** check for property on context ([08cc6da](https://github.com/molgenis/molgenis-ui-context/commit/08cc6da))
+
+
+### Features
+
+* add vuex module ([b8f7ef0](https://github.com/molgenis/molgenis-ui-context/commit/b8f7ef0))
+* **store:** read appVersion from state ([6b78f37](https://github.com/molgenis/molgenis-ui-context/commit/6b78f37))
+
 ## [1.4.3](https://github.com/molgenis/molgenis-ui-context/compare/v1.4.2...v1.4.3) (2019-11-15)
 
 
