@@ -11,29 +11,29 @@ describe('getters', () => {
     })
 
     it('maps context with null menu to null', () => {
-      const param: Context = {...context}
+      const param: Context = { ...context }
       delete param['menu']
-      const actual = molgenisMenu({ context: param})
+      const actual = molgenisMenu({ context: param })
       expect(actual).toBeNull()
     })
 
     it('maps context', () => {
-      const actual = molgenisMenu({context})
+      const actual = molgenisMenu({ context })
       expect(actual).toEqual({
         authenticated: false,
         helpLink: {
-          href: "https://molgenis.gitbooks.io/molgenis/content/", 
-          label: "Help"
+          href: 'https://molgenis.gitbooks.io/molgenis/content/',
+          label: 'Help'
         },
-        loginHref: "/login",
+        loginHref: '/login',
         menu: context.menu,
-        navBarLogo: "/img/Logo_Blue_Small.png",
+        navBarLogo: '/img/Logo_Blue_Small.png',
         topLogoMaxHeight: 150
       })
     })
 
     it('can maps logoTop from context', () => {
-      const actual = molgenisMenu({context: {...context, logoTop: 'https://example.org/logotop.jpg'}})
+      const actual = molgenisMenu({ context: { ...context, logoTop: 'https://example.org/logotop.jpg' } })
       expect(actual && actual.topLogo).toEqual('https://example.org/logotop.jpg')
     })
   })
@@ -45,26 +45,26 @@ describe('getters', () => {
     })
 
     it('maps context', () => {
-      const actual = molgenisFooter({context})
+      const actual = molgenisFooter({ context })
       expect(actual).toEqual({
-        additionalMessage: "Footerdefooter",
-        buildDate: "2019-11-07 15:05 UTC",
-        "molgenisSite": "https://www.molgenis.org",
-        "version": "8.3.0-SNAPSHOT"
+        additionalMessage: 'Footerdefooter',
+        buildDate: '2019-11-07 15:05 UTC',
+        'molgenisSite': 'https://www.molgenis.org',
+        'version': '8.3.0-SNAPSHOT'
       })
     })
 
     it('adds app version from state', () => {
       const appVersion = '1.2.3'
-      const actual = molgenisFooter({context, appVersion})
+      const actual = molgenisFooter({ context, appVersion })
       expect(actual && actual.appVersion).toEqual(appVersion)
     })
 
     it('can handle missing additional message in context', () => {
-      const contextCopy: Context = {...context}
+      const contextCopy: Context = { ...context }
       delete contextCopy.additionalMessage
-      const actual = molgenisFooter({context: contextCopy})
-      expect(actual!=null && actual.hasOwnProperty('additionalMessage')).toBeFalsy()
+      const actual = molgenisFooter({ context: contextCopy })
+      expect(actual != null && actual.hasOwnProperty('additionalMessage')).toBeFalsy()
     })
   })
 })

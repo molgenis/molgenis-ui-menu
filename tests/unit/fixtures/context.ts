@@ -49,7 +49,7 @@ export const context: Context = {
           { type: 'plugin', id: 'security-ui', label: 'Security Manager' }] },
       { type: 'plugin', id: 'useraccount', label: 'Account' }] },
   loginHref: '/login',
-  helpLink: {label: 'Help', href: 'https://molgenis.gitbooks.io/molgenis/content/'},
+  helpLink: { label: 'Help', href: 'https://molgenis.gitbooks.io/molgenis/content/' },
   authenticated: false,
   showCookieWall: false,
   additionalMessage: 'Footerdefooter',
