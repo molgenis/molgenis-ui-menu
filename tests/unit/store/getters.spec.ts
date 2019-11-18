@@ -53,6 +53,13 @@ describe('getters', () => {
         "version": "8.3.0-SNAPSHOT"
       })
     })
+
+    it('adds app version from state', () => {
+      const appVersion = '1.2.3'
+      const actual = molgenisFooter({context, appVersion})
+      expect(actual && actual.appVersion).toEqual(appVersion)
+    })
+
     it('can handle missing additional message in context', () => {
       const contextCopy: Context = {...context}
       delete contextCopy.additionalMessage

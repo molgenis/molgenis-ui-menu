@@ -31,8 +31,15 @@ export const molgenisFooter = (state: ContextState): MolgenisFooter | null => {
     return null
   }
   const result: MolgenisFooter = {
-    ...context,
+    version: context.version,
+    buildDate: context.buildDate,
     molgenisSite: 'https://www.molgenis.org'
+  }
+  if (state.appVersion) {
+    result.appVersion = state.appVersion
+  }
+  if (context.additionalMessage) {
+    result.additionalMessage = context.additionalMessage
   }
   return result
 }

@@ -55,4 +55,5 @@ export interface Context {
 export interface ContextState {
   context: Context | null
   selectedPlugin?: string
+  appVersion?: string
 }
