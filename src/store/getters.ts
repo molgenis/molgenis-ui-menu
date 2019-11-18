@@ -13,13 +13,13 @@ export const molgenisMenu = (state: ContextState): MolgenisMenu | null => {
     loginHref: context.loginHref
   }
   // map optional keys
-  if (context.logoTop) {
+  if (context.hasOwnProperty('logoTop')) {
     result.topLogo = context.logoTop
   }
-  if (context.navBarLogo) {
+  if (context.hasOwnProperty('navBarLogo')) {
     result.navBarLogo = context.navBarLogo
   }
-  if (context.logoTopMaxHeight) {
+  if (context.hasOwnProperty('logoTopMaxHeight')) {
     result.topLogoMaxHeight = context.logoTopMaxHeight
   }
   return result
