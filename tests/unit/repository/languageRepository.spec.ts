@@ -5,7 +5,7 @@ import languageRepository from '../../../src/repository/LanguageRepository'
 describe('LanguageRepository', () => {
   describe('setSelectedLanguage', () => {
     const spy = jest.spyOn(api, 'post')
-    beforeEach(async(done) => {
+    beforeEach(async (done) => {
       await languageRepository.setSelectedLanguage('fr')
       done()
     })
