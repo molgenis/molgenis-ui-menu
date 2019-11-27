@@ -2,7 +2,7 @@ import { ContextState, MolgenisMenu, MolgenisFooter } from '../types'
 
 export const molgenisMenu = (state: ContextState): MolgenisMenu | null => {
   const context = state.context
-  if (!context || !context.menu) {
+  if (!context.menu) {
     return null
   }
   const result: MolgenisMenu = {
@@ -27,7 +27,7 @@ export const molgenisMenu = (state: ContextState): MolgenisMenu | null => {
 
 export const molgenisFooter = (state: ContextState): MolgenisFooter | null => {
   const context = state.context
-  if (!context) {
+  if (!context.version || !context.buildDate) {
     return null
   }
   const result: MolgenisFooter = {

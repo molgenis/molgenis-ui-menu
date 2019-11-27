@@ -1,6 +1,19 @@
-import { ContextState } from '../types'
+import { Context, ContextState, HelpLink } from '../types'
 
 const state: ContextState = {
-  context: null
+  context: <Context> {
+    authenticated: false,
+    navBarLogo: '',
+    showCookieWall: false,
+    email: '',
+    username: 'anonymous',
+    loginHref: '',
+    version: '',
+    buildDate: '',
+    helpLink: <HelpLink> {
+      label: '',
+      href: ''
+    }
+  }
 }
 export default state
