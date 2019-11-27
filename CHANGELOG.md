@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/molgenis/molgenis-ui-context/compare/v1.5.1...v1.6.0) (2019-11-27)
+
+
+### Features
+
+* make email and username mandatory ([c9e631b](https://github.com/molgenis/molgenis-ui-context/commit/c9e631b))
+
 ## [1.5.1](https://github.com/molgenis/molgenis-ui-context/compare/v1.5.0...v1.5.1) (2019-11-27)
 
 
