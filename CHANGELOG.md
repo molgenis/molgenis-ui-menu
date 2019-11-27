@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/molgenis/molgenis-ui-context/compare/v1.5.0...v1.5.1) (2019-11-27)
+
+
+### Bug Fixes
+
+* add email and username to Context ([56da620](https://github.com/molgenis/molgenis-ui-context/commit/56da620))
+
 # [1.5.0](https://github.com/molgenis/molgenis-ui-context/compare/v1.4.3...v1.5.0) (2019-11-18)
 
 
