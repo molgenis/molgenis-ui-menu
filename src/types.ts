@@ -38,6 +38,8 @@ export interface HelpLink {
 }
 
 export interface Context {
+  email?: string,
+  username?: string,
   logoTop?: string
   logoTopMaxHeight: number
   navBarLogo?: string
