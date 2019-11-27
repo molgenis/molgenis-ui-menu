@@ -2,6 +2,8 @@ import { Context } from '@/types'
 export const context: Context = {
   logoTopMaxHeight: 150,
   navBarLogo: '/img/Logo_Blue_Small.png',
+  email: 'user@example.org',
+  username: 'user',
   menu: {
     id: 'main',
     label: 'Home',
