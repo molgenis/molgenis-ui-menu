@@ -52,6 +52,7 @@ export interface Context {
   version: string
   buildDate: string
   cssHref?: string
+  roles: string[]
 }
 
 export interface ContextState {
