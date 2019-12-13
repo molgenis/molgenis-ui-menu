@@ -56,6 +56,7 @@ export const context: Context = {
   showCookieWall: false,
   additionalMessage: 'Footerdefooter',
   version: '8.3.0-SNAPSHOT',
-  buildDate: '2019-11-07 15:05 UTC'
+  buildDate: '2019-11-07 15:05 UTC',
+  roles: []
 }
 export default context
