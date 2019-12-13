@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.0...v1.6.1) (2019-12-13)
+
+
+### Bug Fixes
+
+* add roles to context type ([42e3311](https://github.com/molgenis/molgenis-ui-context/commit/42e3311))
+
 # [1.6.0](https://github.com/molgenis/molgenis-ui-context/compare/v1.5.1...v1.6.0) (2019-11-27)
 
 
