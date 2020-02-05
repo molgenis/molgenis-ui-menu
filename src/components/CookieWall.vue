@@ -46,10 +46,8 @@ export default {
 
 <style scoped>
   .jumbotron {
-    position: fixed;
     margin: 0;
     font-size: 1.2rem;
-    z-index: 1060; /* bootstrap 4 popover z-index */
   }
 
   .cookiewall-leave-active {
