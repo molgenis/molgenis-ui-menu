@@ -1,7 +1,8 @@
 <template>
   <div v-if="isContextLoaded" class="mg-page">
-    <cookie-wall v-if="context.showCookieWall"/>
-    <header-component :molgenis-menu="context"/>
+    <header-component :molgenis-menu="context">
+      <cookie-wall v-if="context.showCookieWall"/>
+    </header-component>
     <main class="mg-page-content">
           <slot>Molgenis page component, add data via slot</slot>
     </main>
