@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.1...v1.6.2) (2020-02-05)
+
+
+### Bug Fixes
+
+* Add cookiewall to header ([5e29335](https://github.com/molgenis/molgenis-ui-context/commit/5e29335))
+
 ## [1.6.1](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.0...v1.6.1) (2019-12-13)
 
 
