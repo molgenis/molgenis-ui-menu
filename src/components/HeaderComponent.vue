@@ -2,7 +2,6 @@
   <header>
     <div class="mg-sticky-header-padder" :style="{ height: headerHeight + 'px' }"></div>
     <div class="fixed-top" ref="stickyHeader">
-        <slot/>
         <header-image v-if="molgenisMenu.topLogo" :imgSrc="molgenisMenu.topLogo" :imgMaxHeight="molgenisMenu.topLogoMaxHeight"/>
         <nav-bar :molgenis-menu="molgenisMenu" />
     </div>
