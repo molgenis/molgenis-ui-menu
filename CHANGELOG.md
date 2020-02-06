@@ -1,3 +1,11 @@
+## [1.6.3](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.2...v1.6.3) (2020-02-06)
+
+
+### Bug Fixes
+
+* cookiewall is full width and infront of content ([4348060](https://github.com/molgenis/molgenis-ui-context/commit/4348060))
+* gave cookiewall a shadow ([86c4826](https://github.com/molgenis/molgenis-ui-context/commit/86c4826))
+
 ## [1.6.2](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.1...v1.6.2) (2020-02-05)
 
 
