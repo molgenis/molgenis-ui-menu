@@ -1,6 +1,6 @@
 <template>
   <transition name="cookiewall">
-   <div v-if="show" class="jumbotron">
+   <div v-if="show" class="jumbotron cookiewall shadow rounded-0">
      <div class="text-center">
        <p>
          {{hostname}} uses third-party analytical cookies to analyze the use of the site and improve usability. By clicking on the accept button, or by continuing to use this website, you consent to the placing of cookies.
@@ -45,9 +45,12 @@ export default {
 </script>
 
 <style scoped>
-  .jumbotron {
+  .cookiewall {
+    position: fixed;
     margin: 0;
     font-size: 1.2rem;
+    z-index: 1060; /* bootstrap 4 popover z-index */
+    width: 100%;
   }
 
   .cookiewall-leave-active {
