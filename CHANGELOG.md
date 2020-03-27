@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.3...v1.6.4) (2020-03-27)
+
+
+### Bug Fixes
+
+* Closes [#103](https://github.com/molgenis/molgenis-ui-context/issues/103) use index to generate key in submenu item ([460b0bc](https://github.com/molgenis/molgenis-ui-context/commit/460b0bc))
+
 ## [1.6.3](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.2...v1.6.3) (2020-02-06)
 
 
