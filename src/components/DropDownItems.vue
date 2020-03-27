@@ -1,9 +1,9 @@
 <template>
   <div :class="{'dropdown-menu': depth === 0}" :aria-labelledby="parent.id">
-    <template v-for="item in items">
+    <template v-for="(item, index) in items">
       <a v-if="item.type === 'plugin'"
          class="dropdown-item"
-         :key="item.id"
+         :key="item.id + index"
          :href="`/menu/${parent.id}/${href(item)}`"
          :class="'menu-depth-'+ depth">
         {{ item.label }}
