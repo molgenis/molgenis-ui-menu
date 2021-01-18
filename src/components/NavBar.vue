@@ -37,23 +37,22 @@
           </template>
         </ul>
 
-        <ul class="navbar-nav justify-content">
-          <li v-if="molgenisMenu.authenticated && languages.length > 1 && selectedLanguage"
-              class="nav-item">
-            <form id="language-form" class="navbar-form">
-              <select class="nav-link" v-model="selectedLanguage.id" @change="handleLanguageSelect">
-                <option
-                  v-for="language in languages"
-                  :key="language.id"
-                  :value="language.id"
-                  :selected="language.id === selectedLanguage.id"
-                >
-                  {{ language.label }}
-                </option>
-              </select>
-            </form>
-          </li>
-        </ul>
+        <form
+          id="language-form"
+          class="form-inline"
+          v-if="molgenisMenu.authenticated && languages.length > 1 && selectedLanguage"
+        >
+          <select class="form-control" v-model="selectedLanguage.id" @change="handleLanguageSelect">
+            <option
+              v-for="language in languages"
+              :key="language.id"
+              :value="language.id"
+              :selected="language.id === selectedLanguage.id"
+            >
+              {{ language.label }}
+            </option>
+          </select>
+        </form>
 
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item">
