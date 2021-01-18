@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.4...v1.6.5) (2021-01-18)
+
+
+### Bug Fixes
+
+* **NavBar:** style language select ([a7e4a72](https://github.com/molgenis/molgenis-ui-context/commit/a7e4a72))
+
 ## [1.6.4](https://github.com/molgenis/molgenis-ui-context/compare/v1.6.3...v1.6.4) (2020-03-27)
 
 
