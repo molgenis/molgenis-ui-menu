@@ -26,9 +26,7 @@ exports[`NavBar.vue should match the snapshot 1`] = `
           <drop-down-items-stub parent="[object Object]" items="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" depth="0"></drop-down-items-stub>
         </li>
       </ul>
-      <ul class="navbar-nav justify-content">
-        <!---->
-      </ul>
+      <!---->
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item"><a href="https://molgenis.gitbooks.io/molgenis/content/" target="_blank" class="nav-link">
             Help
