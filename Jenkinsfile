@@ -16,7 +16,7 @@ pipeline {
                         env.GITHUB_TOKEN = sh(script: 'vault read -field=value secret/ops/token/github', returnStdout: true)
                         env.CODECOV_TOKEN = sh(script: 'vault read -field=molgenis-ui-menu secret/ops/token/codecov', returnStdout: true)
                         env.SAUCE_CRED_USR = sh(script: 'vault read -field=username secret/ops/token/saucelabs', returnStdout: true)
-                        env.SAUCE_CRED_PSW = sh(script: 'vault read -field=value secret/ops/token/saucelabs', returnStdout: true)
+                        env.SAUCE_CRED_PSW = sh(script: 'vault read -field=accesskey secret/ops/token/saucelabs', returnStdout: true)
                         env.NPM_TOKEN = sh(script: 'vault read -field=value secret/ops/token/npm', returnStdout: true)
                     }
                 }
@@ -33,9 +33,7 @@ pipeline {
                 container('node') {
                     sh "yarn install"
                     sh "yarn test:unit"
-                    // Todo reenable safari when bug is fixed, https://bugs.webkit.org/show_bug.cgi?id=202589
-                    // sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
-                    sh "yarn test:e2e --env ci_chrome,ci_ie11,ci_firefox"
+                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
                 }
             }
             post {
@@ -56,9 +54,7 @@ pipeline {
                 container('node') {
                     sh "yarn install"
                     sh "yarn test:unit"
-                    // Todo reenable safari when bug is fixed, https://bugs.webkit.org/show_bug.cgi?id=202589
-                    // sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
-                    sh "yarn test:e2e --env ci_chrome,ci_ie11,ci_firefox"
+                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
                 }
             }
             post {
@@ -84,9 +80,7 @@ pipeline {
                 container('node') {
                     sh "yarn install"
                     sh "yarn test:unit"
-                    // Todo reenable safari when bug is fixed, https://bugs.webkit.org/show_bug.cgi?id=202589
-                    // sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
-                    sh "yarn test:e2e --env ci_chrome,ci_ie11,ci_firefox"
+                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
                 }
             }
             post {
