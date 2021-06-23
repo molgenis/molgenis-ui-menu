@@ -68,7 +68,9 @@ module.exports = {
       .assert.elementPresent('#top-logo-vue-banner')
       .assert.elementPresent('#logo-top')
       .getElementSize('#logo-top', function (size) {
-        this.assert.strictEqual(Math.round(size.value.width), 460, 'Width of logo 100% when screen wider than logo')
+        this.assert.strictEqual(
+          Math.abs(size.value.width - 460) < 2, true,
+          'Width of logo 100% when screen wider than logo')
       })
       .end()
   }
