@@ -19,14 +19,17 @@
         Please cite <a href="https://www.ncbi.nlm.nih.gov/pubmed/30165396">Van der Velde et al (2018)</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/21210979">Swertz et al (2010)</a> or <a href="https://www.ncbi.nlm.nih.gov/pubmed/17297480">Swertz &amp; Jansen(2007)</a> on use.
       </p>
     </div>
+    <analytics-text :trackingId="googleAnalyticsTrackingId" :trackingIdMolgenis="googleAnalyticsTrackingIdMolgenis"></analytics-text>
   </footer>
 </template>
 
 <script>
-
+import AnalyticsText from './AnalyticsText.vue'
 import { MolgenisFooter } from '../types'
+
 export default {
   name: 'FooterComponent',
+  components: { AnalyticsText },
   props: {
     molgenisFooter: MolgenisFooter
   },
@@ -36,7 +39,9 @@ export default {
       version: this.molgenisFooter.version,
       buildDate: this.molgenisFooter.buildDate,
       appVersion: this.molgenisFooter.appVersion,
-      molgenisSite: this.molgenisFooter.molgenisSite
+      molgenisSite: this.molgenisFooter.molgenisSite,
+      googleAnalyticsTrackingId: this.molgenisFooter.googleAnalyticsTrackingId,
+      googleAnalyticsTrackingIdMolgenis: this.molgenisFooter.googleAnalyticsTrackingIdMolgenis
     }
   }
 }
