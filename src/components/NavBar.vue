@@ -79,7 +79,6 @@
 </template>
 
 <script>
-import { MolgenisMenu } from '../types'
 import { href } from '../href'
 import DropDownItems from './DropDownItems'
 import languageRepository from '../repository/LanguageRepository'
@@ -89,7 +88,7 @@ import eventUtilService from '../service/EventUtilService'
 export default {
   name: 'NavBar',
   props: {
-    molgenisMenu: MolgenisMenu
+    molgenisMenu: Object
   },
   components: {
     DropDownItems

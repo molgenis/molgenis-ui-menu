@@ -2,8 +2,8 @@
 module.exports = {
   chainWebpack: config => {
     config.externals({
-      'jquery': 'jQuery',
-      'bootstrap': 'bootstrap',
+      jquery: 'jQuery',
+      bootstrap: 'bootstrap',
       'popper.js': 'Popper.js'
     })
   },
@@ -110,7 +110,7 @@ module.exports = {
                             type: 'plugin',
                             id: 'background',
                             label: 'Test',
-                            'params': ''
+                            params: ''
                           }
                         ]
                       },

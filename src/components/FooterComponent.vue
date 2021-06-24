@@ -23,12 +23,10 @@
 </template>
 
 <script>
-
-import { MolgenisFooter } from '../types'
 export default {
   name: 'FooterComponent',
   props: {
-    molgenisFooter: MolgenisFooter
+    molgenisFooter: Object
   },
   data: function () {
     return {

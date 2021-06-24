@@ -38,28 +38,7 @@ pipeline {
                 container('node') {
                     sh "yarn install"
                     sh "yarn test:unit"
-                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
-                }
-            }
-            post {
-                always {
-                    container('node') {
-                        fetch_codecov()
-                        sh "./codecov -c -F unit -K -C ${GIT_COMMIT}"
-                    }
-                }
-            }
-        }
-        stage('Install, test and build: [ chore/cli3 ]') {
-            when {
-                branch 'chore/cli3'
-            }
-            steps {
-                milestone 1
-                container('node') {
-                    sh "yarn install"
-                    sh "yarn test:unit"
-                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
+                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox --use-selenium"
                 }
             }
             post {
@@ -85,7 +64,7 @@ pipeline {
                 container('node') {
                     sh "yarn install"
                     sh "yarn test:unit"
-                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
+                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox --use-selenium"
                 }
             }
             post {

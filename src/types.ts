@@ -12,6 +12,11 @@ export interface Menu extends MenuNode {
   items: (Menu | MenuItem)[]
 }
 
+export interface HelpLink {
+  label: string
+  href: string
+}
+
 export interface MolgenisMenu {
   menu: Menu
   topLogo?: string
@@ -30,11 +35,6 @@ export interface MolgenisFooter {
   molgenisSite: string
   appVersion?: string
   additionalMessage?: string
-}
-
-export interface HelpLink {
-  label: string
-  href: string
 }
 
 export interface Context {

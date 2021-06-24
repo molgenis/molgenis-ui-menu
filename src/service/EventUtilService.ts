@@ -8,14 +8,13 @@ export default {
    */
   debounce (func: Function, wait: number) {
     let timeout: number | null
-    return () => {
-      let context = this
-      let args = arguments
-      let later = () => {
+    return (...args: any[]) => {
+      const context = this
+      const later = () => {
         timeout = null
         func.apply(context, args)
       }
-      let callNow = !timeout
+      const callNow = !timeout
       if (timeout !== null) {
         clearTimeout(timeout)
       }

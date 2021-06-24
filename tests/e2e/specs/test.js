@@ -38,8 +38,8 @@ module.exports = {
       .assert.elementPresent('.jumbotron button.btn')
       .click('.jumbotron button.btn')
       .pause(1000)
-      .assert.elementNotPresent('.jumbotron')
-      .assert.elementNotPresent('.jumbotron button.btn')
+      .assert.not.elementPresent('.jumbotron')
+      .assert.not.elementPresent('.jumbotron button.btn')
       .end()
   },
   'wil not show cookiewall after click': browser => {
@@ -51,12 +51,11 @@ module.exports = {
       .click('.jumbotron button.btn')
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#app', 5000)
-      .assert.elementNotPresent('.jumbotron')
-      .assert.elementNotPresent('.jumbotron button.btn')
+      .assert.not.elementPresent('.jumbotron')
+      .assert.not.elementPresent('.jumbotron button.btn')
       .end()
   },
   'show logo above menu bar': browser => {
-    const screenSize = 400
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#app', 5000)
@@ -64,7 +63,7 @@ module.exports = {
       .assert.elementPresent('.jumbotron button.btn')
       .click('.jumbotron button.btn')
       .pause(1000)
-      .assert.elementNotPresent('.jumbotron')
+      .assert.not.elementPresent('.jumbotron')
       .assert.elementPresent('#top-logo-vue-banner')
       .assert.elementPresent('#logo-top')
       .getElementSize('#logo-top', function (size) {

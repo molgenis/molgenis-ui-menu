@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import { MolgenisMenu } from '../types'
 import HeaderImage from './HeaderImage.vue'
 import NavBar from './NavBar.vue'
 
@@ -17,7 +16,7 @@ export default {
   name: 'HeaderComponent',
   components: { NavBar, HeaderImage },
   props: {
-    molgenisMenu: MolgenisMenu
+    molgenisMenu: Object
   },
   data () {
     return {

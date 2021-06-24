@@ -12,7 +12,7 @@ describe('getters', () => {
 
     it('maps context with null menu to null', () => {
       const param: Context = { ...context }
-      delete param['menu']
+      delete param.menu
       const actual = molgenisMenu({ context: param })
       expect(actual).toBeNull()
     })
@@ -49,8 +49,8 @@ describe('getters', () => {
       expect(actual).toEqual({
         additionalMessage: 'Footerdefooter',
         buildDate: '2019-11-07 15:05 UTC',
-        'molgenisSite': 'https://www.molgenis.org',
-        'version': '8.3.0-SNAPSHOT'
+        molgenisSite: 'https://www.molgenis.org',
+        version: '8.3.0-SNAPSHOT'
       })
     })
 
@@ -64,7 +64,7 @@ describe('getters', () => {
       const contextCopy: Context = { ...context }
       delete contextCopy.additionalMessage
       const actual = molgenisFooter({ context: contextCopy })
-      expect(actual != null && actual.hasOwnProperty('additionalMessage')).toBeFalsy()
+      expect(actual != null && Object.prototype.hasOwnProperty.call(actual, 'additionalMessage')).toBeFalsy()
     })
   })
 })
