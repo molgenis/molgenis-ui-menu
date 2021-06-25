@@ -56,7 +56,7 @@ const molgenisMenu: MolgenisMenu = {
                     type: 'plugin',
                     id: 'background',
                     label: 'Test',
-                    'params': ''
+                    params: ''
                   }
                 ]
               },

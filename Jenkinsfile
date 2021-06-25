@@ -14,7 +14,7 @@ pipeline {
                     script {
                         env.TUNNEL_IDENTIFIER = sh(script: 'echo ${GIT_COMMIT}-${BUILD_NUMBER}', returnStdout: true)
                         env.GITHUB_TOKEN = sh(script: 'vault read -field=value secret/ops/token/github', returnStdout: true)
-                        env.CODECOV_TOKEN = sh(script: 'vault read -field=molgenis-ui-menu secret/ops/token/codecov', returnStdout: true)
+                        env.CODECOV_TOKEN = sh(script: 'vault read -field=molgenis-ui-context secret/ops/token/codecov', returnStdout: true)
                         env.SAUCE_CRED_USR = sh(script: 'vault read -field=username secret/ops/token/saucelabs', returnStdout: true)
                         env.SAUCE_CRED_PSW = sh(script: 'vault read -field=accesskey secret/ops/token/saucelabs', returnStdout: true)
                         env.NPM_TOKEN = sh(script: 'vault read -field=value secret/ops/token/npm', returnStdout: true)
@@ -38,28 +38,7 @@ pipeline {
                 container('node') {
                     sh "yarn install"
                     sh "yarn test:unit"
-                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
-                }
-            }
-            post {
-                always {
-                    container('node') {
-                        fetch_codecov()
-                        sh "./codecov -c -F unit -K -C ${GIT_COMMIT}"
-                    }
-                }
-            }
-        }
-        stage('Install, test and build: [ chore/cli3 ]') {
-            when {
-                branch 'chore/cli3'
-            }
-            steps {
-                milestone 1
-                container('node') {
-                    sh "yarn install"
-                    sh "yarn test:unit"
-                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
+                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox --use-selenium"
                 }
             }
             post {
@@ -85,7 +64,7 @@ pipeline {
                 container('node') {
                     sh "yarn install"
                     sh "yarn test:unit"
-                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox"
+                    sh "yarn test:e2e --env ci_chrome,ci_safari,ci_ie11,ci_firefox --use-selenium"
                 }
             }
             post {
