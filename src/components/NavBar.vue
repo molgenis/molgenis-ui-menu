@@ -83,7 +83,7 @@ import { href } from '../href'
 import DropDownItems from './DropDownItems'
 import languageRepository from '../repository/LanguageRepository'
 import languageService from '../service/LanguageService'
-import eventUtilService from '../service/EventUtilService'
+import debounce from 'lodash.debounce'
 
 export default {
   name: 'NavBar',
@@ -137,7 +137,6 @@ export default {
         }
       }
     },
-    debounce: eventUtilService.debounce,
     getPixelValue (sourceObject, propertyName) {
       return parseInt(sourceObject.getPropertyValue(propertyName), 10)
     }
@@ -151,7 +150,7 @@ export default {
       const paddingBottom = this.getPixelValue(linkStyleObject, 'padding-bottom')
       this.wrapMargin = Math.round(lineHeight / 2)
       this.expectedNavHeight = lineHeight + paddingTop + paddingBottom
-      window.addEventListener('resize', this.debounce(this.handleResize, 100))
+      window.addEventListener('resize', debounce(this.handleResize, 100))
     }
 
     if (this.molgenisMenu.authenticated) {

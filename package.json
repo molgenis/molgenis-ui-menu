@@ -23,7 +23,8 @@
   ],
   "dependencies": {
     "@molgenis/molgenis-api-client": "^3.1.0",
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.2",
